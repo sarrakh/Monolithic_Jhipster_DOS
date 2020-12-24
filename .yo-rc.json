@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "tn.isi.monoapp"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "MonoAppSOA",
+    "packageName": "tn.isi.monoapp",
+    "packageFolder": "tn/isi/monoapp",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OGM5Nzc3NTAzMDA1ZTRjMmRkOTYzMTUzYjI2OTZkNDI0NWE0ZDhkZjM1OGUzMWU2YzEyZTYzYTU1ZGQwNDdiYjA1YWQyOTMyNjQxNTAyZGZiNjgyZmY0YmEzOTMxMmIxNGJlMTI2ZjEwMGI2OWFmM2MxYTBmN2M2MDllZmZiY2E=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "yeti",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1608837853509,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
