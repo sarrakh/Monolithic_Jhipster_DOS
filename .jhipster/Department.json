@@ -1,0 +1,33 @@
+{
+  "name": "Department",
+  "fields": [
+    {
+      "fieldName": "departmentName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "10"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "department",
+      "relationshipName": "employee"
+    }
+  ],
+  "changelogDate": "20201224193641",
+  "entityTableName": "department",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

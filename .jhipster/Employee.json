@@ -1,0 +1,88 @@
+{
+  "name": "Employee",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "15"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "12"
+    },
+    {
+      "fieldName": "hireDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "salary",
+      "fieldType": "Long",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "commissionPct",
+      "fieldType": "Long",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "job"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "department",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "department",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201224193741",
+  "entityTableName": "employee",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

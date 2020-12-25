@@ -1,0 +1,48 @@
+{
+  "name": "Job",
+  "fields": [
+    {
+      "fieldName": "jobTitle",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "10"
+    },
+    {
+      "fieldName": "minSalary",
+      "fieldType": "Long",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "maxSalary",
+      "fieldType": "Long",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "job",
+      "relationshipName": "employee",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201224193841",
+  "entityTableName": "job",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
